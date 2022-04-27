@@ -1,7 +1,7 @@
-import product1 from '..//images/pizza-g14f461e7c_1920.jpg'
-import product2 from '..//images/plate-2802332_1920.jpg'
-import product3 from '..//images/pizza-g46b2f39a0_1920.jpg'
-import product4 from '..//images/pizza-g37346b7c3_1920.jpg'
+import product1 from './images/pizza-g14f461e7c_1920.jpg'
+import product2 from './images/pizza-g46b2f39a0_1920.jpg'
+import product3 from './images/pizza-g37346b7c3_1920.jpg'
+import product4 from './images/plate-2802332_1920.jpg'
 
  const menu = [
     {
