@@ -1,6 +1,55 @@
+/* Custom fonts
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight: 400;
+}
+
+Default CSS
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  body{
+    font-weight: 400;
+    overflow-x:hidden;
+    position:relative;
+    background-color: #121212;
+    color:#fff;
+    font-family: 'Centra', sans-serif;
+  }
+
+  nav.navbar{
+    padding:18px 0;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 9999;
+    transition: 0.32 ease-in-out;
+  }
+
+  nav.navbar.scrolled{
+    padding:0px 0;
+    background-color:#121212;
+  } */
+
 .App {
   text-align: center;
-}
+} 
 
 .App-logo {
   height: 40vmin;
