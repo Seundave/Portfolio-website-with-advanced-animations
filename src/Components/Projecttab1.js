@@ -9,9 +9,9 @@ import img3 from "../assets/images/social media with toggle switcher.JPG";
 export const Projecttab1 = () =>{
     return(
         <div className="Projecttab">
-            <img src={img1} className="img1"/>
-            <img src={img2} className="img1"/>
-            <img src={img3} className="img1"/>
+            <img src={img1} alt="img1" className="img1"/>
+            <img src={img2} alt="img2" className="img1"/>
+            <img src={img3} alt="img3" className="img1"/>
         </div>
     )
 }

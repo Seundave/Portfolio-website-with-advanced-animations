@@ -1,5 +1,5 @@
 import React from "react";
-import { Graphicdesign } from "./Graphicdesign";
+// import { Graphicdesign } from "./Graphicdesign";
 import '../style.css';
 import first from "../assets/images/meter1.svg"
 import second from "../assets/images/meter1.svg"

@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import '../style.css';
 import Header from "../assets/images/header-img.svg";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+// import TrackVisibility from 'react-on-screen';
 
 export const Banner = () =>{
     const [loopNum, setLoopNumber] = useState(0);

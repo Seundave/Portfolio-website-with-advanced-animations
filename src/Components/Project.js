@@ -3,7 +3,7 @@ import "../style.css";
 import { Projecttab1 } from "./Projecttab1"
 import { Projecttab2 } from "./Projecttab2"
 import img1 from "../assets/images/Survey-form.JPG";
-import img2 from "../assets/images/Tribute-page.JPG";
+// import img2 from "../assets/images/Tribute-page.JPG";
 
 
 // let tabs = document.querySelectorAll('.tabs-toggle'),

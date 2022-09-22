@@ -5,7 +5,7 @@ export const Contactus = () =>{
     return(
        <div className="contact">
             <div className="contact-anim">
-                <img src={contact} className="contact-img"/>
+                <img src={contact} alt="contact" className="contact-img"/>
             </div>
             <div className='contact-form'>
                 <form>
