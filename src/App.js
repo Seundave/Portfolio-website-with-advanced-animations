@@ -5,6 +5,7 @@ import {Skills} from './Components/Skills';
 import {Project} from './Components/Project';
 import {Contactus} from './Components/Contactus';
 import {Subscribe} from './Components/Subscribe';
+import {Footer} from './Components/Footer';
 
 import "./style.css";
 
@@ -18,6 +19,7 @@ function App() {
       <Project/>
       <Contactus/>
       <Subscribe/>
+      <Footer/>
     </div>
   )
 }

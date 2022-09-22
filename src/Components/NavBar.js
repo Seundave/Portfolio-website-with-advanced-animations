@@ -1,16 +1,18 @@
 import React from "react";
 // import {useState, useEffect} from "react";
 // import{Navbar} from "react-bootstrap";
-// import navIcon1 from '../assets/images/nav-icon1.svg'; 
-// import navIcon2 from '../assets/images/nav-icon2.svg'; 
-// import navIcon3 from '../assets/images/nav-icon3.svg'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Navbar from "../assets/images/logo.svg"
+// import img1 from "../assets/images/nav-icon1.svg"
+// import img2 from '../assets/images/nav-icon2.svg'
+// import img3 from '../assets/images/nav-icon3.svg'; 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 // import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
-import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { RiFacebookCircleLine } from "react-icons/ri";
-import { BsInstagram } from "react-icons/bs";
+// import { TiSocialLinkedinCircular } from "react-icons/ti";
+// import { RiFacebookCircleLine } from "react-icons/ri";
+// import { BsInstagram } from "react-icons/bs";
 import "../style.css";
+// import { Socialicons } from "./Socialicons";
 
 
 export const NavBar = () =>{
@@ -63,8 +65,8 @@ export const NavBar = () =>{
         // </Navbar>
         <div className="Navbar">
             <div className="Logo">
-                <p>Logo</p>
-                {/* <img src={''} alt="Logo"/> */}
+                {/* <p>Logo</p> */}
+                <img src={Navbar} alt="Logo" className="company-logo"/>
             </div>
             <div className="nav">
                 <ul>
@@ -72,23 +74,7 @@ export const NavBar = () =>{
                     <a href="#skills"  id="skills"><li>Skills</li></a>
                     <a href="#projects" id="projects"><li>Projects</li></a>
                 </ul>
-                <div className="social-icon">
-                    <a href="#">
-                    <FontAwesomeIcon
-                    icon={faCoffee} className="icon"/>  
-                    </a>
-                    <a href="#">
-                    <FontAwesomeIcon
-                    icon={faCoffee} className="icon"/>  
-                    </a>
-                    <a href="#">
-                    <FontAwesomeIcon
-                    icon={faCoffee} className="icon"/>  
-                    </a>
-                
-                    
-                    
-                </div>
+                {/* <Socialicons/> */}
                 <button className="connect"> Let's Connect</button>
             </div>
         </div>

@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+    width:100%;
+    height:100%;
+}
+
 .App{
     width:100%;
     height:100%;
@@ -45,10 +50,10 @@
 
 .icon{
     margin: 0 10px;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: red;
+    /* height: 20px; */
+    /* width: 20px; */
+    /* border-radius: 50%; */
+    /* background-color: red; */
 }
 
 
@@ -92,7 +97,7 @@ section{
 }
 
 .content{
-    width:50%;
+    width:65%;
     height:100%;
     /* background-color: red; */
     box-sizing: border-box;
@@ -100,15 +105,15 @@ section{
 }
 
 .animation{
-    width:50%;
+    width:35%;
 }
 
 .Header-img{
     margin-top: 120px;
-    width:50%;
-    margin-left: 200px;
-    height:400px;
-    width: 400px;
+    width:80%;
+    margin-left: 50px;
+    /* height:400px; */
+    /* width: 350px; */
 }
 
 .Welcome{
@@ -135,6 +140,7 @@ section{
     margin-top:13px;
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 70px;
 }
 
 .connect-us{
@@ -170,16 +176,35 @@ section{
 }
 
 .progress{
+    width:100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    /* background-color: aqua; */
 }
 
 .web-dev{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 55px;
+}
+
+/* .web-dev > img{
+    width:25%;
+    margin-right: 0px 15px;
+    margin-right: 35px;
+} */
+
+.web-dev > p{
+    color:white;
+    text-align: center;
+    /* margin-top: 1px; */
+    margin-bottom: 25px;
+    /* display:flex;
+    flex-direction: row; */
 }
 
 .outer{
@@ -324,7 +349,7 @@ svg{
 }
 
 .tabs-toggle.is-active{
-    background-color: aqua;
+    background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%));
 }
 
 .tabs-toggle.is-active.tabs-name{
@@ -348,7 +373,18 @@ svg{
     height:200px;
     border-radius: 30px;
     margin: 10px calc(10%/3);
+    
 }
+
+.img1:hover{
+    content:'';
+    opacity:1;
+    width:60%;
+    height:60%;
+    background-color: black;
+    cursor: pointer;
+}
+
 /* .overlay{
     position:absolute;
     top:0;
@@ -377,9 +413,11 @@ svg{
 
 .contact{
     display:flex;
+    align-items: center;
     width:100%;
     min-height: auto;
     background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%));
+    position:absolute;
 }
 
 
@@ -391,10 +429,17 @@ form > h2{
 
 .contact-anim{
     width:50%;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.contact-img{
+    width:80%;
 }
 
 .contact-form{
-    width:100%;
+    width:50%;
     margin:70px 40px;
 }
 
@@ -436,6 +481,7 @@ textarea {
     height:40px;
     font-weight: 700;
     font-size: 15px;
+    margin-bottom: 150px;
 }
 
 .subscribe{
@@ -445,6 +491,9 @@ textarea {
     margin:10px auto;
     border-radius: 50px;
     display: flex;
+    position:relative;
+    top:0;
+    margin-top:750px;
 }
 
 .subscribe-text{
@@ -455,32 +504,368 @@ textarea {
     /* padding-left:15px; */
     padding:50px 15px;
     font-weight: 700;
-}
-
-.subscribe-btn{
-    width:60%;
     margin-right: auto;
 }
 
-.submit-btn{
-    width:150px;
-    height:50px;
-    border-radius: 25px;
-    background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%));
-    color:white;
-    font-size: 15px;
-    border: none;
+
+.subscribe-btn{
+    width:60%;
+    /* padding: 0px 20px; */
+    /* margin-right: auto; */
+    
 }
 
 .subscribe-btn > input{
-    width:300px;
+    width:90%;
+    height:50px;
     border: 1px solid black;
-    margin: 70px 30px;
+    margin-top: 70px;
     border-radius: 25px;
+    
     
 }
 
 .subscribe-btn > input::-webkit-input-placeholder{
     color:rgb(116, 114, 114);
     padding-left:10px;
+}
+
+.submit-btn{
+    width:150px;
+    height:40px;
+    border-radius: 25px;
+    background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%));
+    color:white;
+    font-size: 15px;
+    border: none;
+    position:absolute;
+    top:75px;
+    right:80px;
+}
+
+.Footer{
+    width:100%;
+    display:flex;
+}
+
+.footer-icons{
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.footer-img{
+    margin-top: 50px;
+    margin-right: auto;
+}
+
+@media screen and (max-width:900px) {
+    .App{
+        width:100%;
+    }
+
+    .company-logo{
+        width:50px;
+        margin:0px;
+    }
+
+    .tabs-head{
+        width:80%;
+    }
+
+    .progress{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web-dev{
+        margin-right: 0px;
+    }
+    
+    .Project-title > p{
+        text-align: center;
+        padding:20px 60px;
+        color:rgb(134, 130, 130);
+    }
+
+    .Projecttab{
+        display:flex;
+        flex-direction: column;
+        margin: auto;
+        width:80%;
+        justify-content: center;
+        
+    }
+    
+    .img1{
+        width:100%;
+        height:200px;
+    }
+
+    .img1:hover{
+        content:'';
+        opacity:1;
+        width:100%;
+        height:100%;
+        background-color: black;
+        cursor: pointer;
+    }
+   
+    .subscribe{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subscribe-text{
+        width:100%;
+        padding:30px 0px;
+    }
+
+    .subscribe-text > p{
+        padding:0px 20px;
+    }
+
+    .subscribe-btn{
+        width:100%;
+    }
+
+    .subscribe-btn > input {
+        /* width: 90%; */
+        /* height: 50px; */
+        /* border: 1px solid black; */
+        margin: 20px;
+        /* border-radius: 25px; */
+    }
+
+    .submit-btn {
+        /* width: 150px; */
+        /* height: 40px; */
+        /* border-radius: 25px; */
+        /* background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%)); */
+        /* color: white; */
+        /* font-size: 15px; */
+        /* border: none; */
+        position: absolute;
+        top: 159px;
+        right: 50px;
+    }
+
+    
+
+    /* .subscribe{
+        width:80%;
+        height:auto;
+        flex-direction: column;
+        background-color: white;
+        margin:10px auto;
+        border-radius: 50px;
+        display: flex;
+        position:relative;
+        bottom:0;
+        margin-top:750px;
+    } */
+    
+    /* .subscribe-text{
+        width:100%;
+        font-family: montserrat;
+        font-size:20px;
+        text-align: center;
+        padding-left:15px;
+        padding:10px;
+        font-weight: 700;
+    } */
+    
+    
+    /* .subscribe-btn{
+        width:60%;
+        margin-right: auto;
+        
+    } */
+    
+    /* .subscribe-btn > input{
+        width:400px;
+        height:50px;
+        border: 1px solid black;
+        margin: 70px 30px;
+        border-radius: 25px;
+        position:absolute;
+        
+    } */
+    
+    /* .subscribe-btn > input::-webkit-input-placeholder{
+        color:rgb(116, 114, 114);
+        padding-left:10px;
+    } */
+    
+}
+
+@media screen and (max-width:300px),(max-width:400px),(max-width:500px),(max-width:600px) {
+    section{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        /* height: 100%; */
+        /* background-color: red; */
+        box-sizing: border-box;
+        /* color: white; */
+    }
+
+    .content > h2 {
+        margin: 20px;
+        /* margin-top: 15px; */
+        font-size: 25px;
+    }
+
+    .content > p {
+        margin: 20px;
+        /* margin-top: 13px; */
+        /* font-size: 13px; */
+        /* font-family: 'Courier New', Courier, monospace; */
+        /* margin-bottom: 70px; */
+    }
+
+    .Welcome {
+        /* font-weight: 700; */
+        /* font-size: 15px; */
+        /* width: 200px; */
+        /* height: 50px; */
+        margin: 20px;
+        /* margin-top: 120px; */
+        /* padding: 10px; */
+        /* text-align: center; */
+        /* border: none; */
+        /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    }
+
+    .connect-us {
+        margin: 20px;
+        /* font-size: 15px; */
+        /* margin-top: 100px; */
+        /* font-weight: 700; */
+    }
+
+    .animation {
+        width: 80%;
+        display: flex;
+        text-align: center;
+    }
+
+    .skills {
+        width: 90%;
+        /* margin: 0px auto; */
+        /* border-radius: 30px; */
+        /* background-color: rgb(15, 14, 14); */
+        /* height: auto; */
+        /* margin-top: 50px; */
+    }
+
+    .skills-intro > p {
+        /* text-align: center; */
+        /* font-size: 15px; */
+        padding: 10px 30px;
+        /* color: rgb(134, 130, 130); */
+    }
+
+    .Header-img {
+        margin-top: 50px;
+        width: 100%;
+        /* margin-left: 50px; */
+        /* height: 400px; */
+        /* width: 350px; */
+    }
+
+    .tabs-head {
+        width: 90%;
+    }
+
+    .tabs-name {
+        font-size: 10px;
+        /* color: white; */
+        /* font-weight: 500; */
+    }
+
+    .tabs-body {
+        width: 100%;
+        /* margin: 0px auto; */
+        /* background: white; */
+        /* border-radius: 25px; */
+        /* padding: 30px; */
+        /* position: relative; */
+    }
+
+    .Projecttab {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* margin: auto; */
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* width: 100%; */
+        /* min-height: auto; */
+        /* background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%)); */
+        /* position: absolute; */
+    }
+
+    .contact-anim {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-img {
+        /* width: 80%; */
+        padding-top: 50px;
+    }
+
+    .contact-form {
+        width: 80%;
+        margin: 30px;
+    }
+
+    .subscribe {
+        /* width: 80%; */
+        /* height: auto; */
+        /* background-color: white; */
+        /* margin: 10px auto; */
+        /* border-radius: 50px; */
+        /* display: flex; */
+        /* position: relative; */
+        /* top: 0; */
+        margin-top: 900px;
+    }
+
+    .subscribe-text {
+        /* width: 40%; */
+        /* font-family: montserrat; */
+        font-size: 20px;
+        /* text-align: center; */
+        /* padding-left: 15px; */
+        /* padding: 50px 15px; */
+        /* font-weight: 700; */
+        /* margin-right: auto; */
+    }
+
+    .submit-btn{
+        position:inherit;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .tabs-name{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:912px) {
+    .tabs-name{
+        font-size: 10px;
+    }
 }

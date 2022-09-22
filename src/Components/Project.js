@@ -9,7 +9,7 @@ import img2 from "../assets/images/Tribute-page.JPG";
 // let tabs = document.querySelectorAll('.tabs-toggle'),
 // let contents = document.querySelectorAll('.tabs-content');
 
-// tabs.forEach({tab, index} => {
+// tabs.forEach((tab, index) => {
 //     tabs.addEventListener('click', () =>{
 //         contents.forEach((content) =>{
 //             content.classList.remove('is-active');
@@ -21,6 +21,8 @@ import img2 from "../assets/images/Tribute-page.JPG";
 //         tabs[index].classList.add('is-active');
 //     });
 // });
+
+
 export const Project = () =>{
     return(
         <div className="container">

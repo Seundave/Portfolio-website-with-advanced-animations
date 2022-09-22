@@ -1,17 +1,21 @@
+import React from "react";
 import { Graphicdesign } from "./Graphicdesign";
 import '../style.css';
+import first from "../assets/images/meter1.svg"
+import second from "../assets/images/meter1.svg"
+import third from "../assets/images/meter1.svg"
 
-let number = document.getElementById("number");
-let counter = 0;
-setInterval(() =>{
-    if (counter === 95){
-        clearInterval();
-    }else{
-        counter +=1; 
-        number.innerHTML = counter +"%";
-    }
+// let number = document.getElementById("number");
+// let counter = 0;
+// setInterval(() =>{
+//     if (counter === 95){
+//         clearInterval();
+//     }else{
+//         counter +=1; 
+//         number.innerHTML = counter +"%";
+//     }
    
-},1000);
+// },1000);
 
 export const Webdevelopment =()=>{
     return(
@@ -21,7 +25,20 @@ export const Webdevelopment =()=>{
                 <p> The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, Provide a valid, navigable address as the href value. </p>
             </div>
             <div className="progress">
-                <div className="outer">
+                <div className="web-dev">
+                    <img src={first} alt=""/>
+                    <p> Web Development</p>
+                </div>
+                <div className="web-dev">
+                    <img src={second} alt=""/>
+                    <p> Graphic Design</p>
+                </div>
+                <div className="web-dev">
+                    <img src={third} alt=""/>
+                    <p> Web Development</p>
+                </div>
+            </div>
+                {/* <div className="outer">
                     <div className="inner">
                         <div id="number"> 
                             <p>95%</p>
@@ -36,15 +53,15 @@ export const Webdevelopment =()=>{
                             </linearGradient>
                         </defs>
                         <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                </svg>
+                </svg> */}
                 
                 
-            </div>
-            <div className="web">
+           
+            {/* <div className="web">
                 <p> Web Development</p>
-            </div>
+            </div> */}
 
-            <Graphicdesign/>
+            {/* <Graphicdesign/> */}
         </div>
 
         
