@@ -5,7 +5,8 @@ import React from "react";
 import { useState, useEffect } from "react"
 import '../style.css';
 import Header from "../assets/images/header-img.svg";
-import 'animate.css';
+import {motion} from 'framer-motion'
+// import 'animate.css';
 // import TrackVisibility from 'react-on-screen';
 
 export const Banner = () =>{
@@ -52,10 +53,10 @@ export const Banner = () =>{
                 <button className="Welcome"> Welcome to my Portfolio</button>
                 <h2>I am a {text}</h2>
                 <p> The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md</p>
-                <span className="connect-us">Let's Connect</span>
+                <button className="connect-us">Let's Connect</button>
             </div>
             <div className="animation">
-                <img src={Header} alt="Header-img" className='Header-img'/>
+                <motion.img src={Header} alt="Header-img" className='Header-img' animate={{rotate: [0,50,0,0]}} transition={{repeat:Infinity,duration:3.5}}/>
             </div>
         </section>
     //  <section className="banner" id="home">

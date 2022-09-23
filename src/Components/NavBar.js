@@ -56,7 +56,7 @@ export const NavBar = () =>{
                 toggleMenu && (
                 <div className="smallscreen-overlay">
                     <AiOutlineClose color="#fff" cursor="pointer" fontSize={27} className="overlay-close" onClick={showMenu}/>
-                    <ul className='smallscreen-links'>
+                    <ul className='smallscreen-links'onClick={showMenu}>
                         <li className='opensans'><HiHome/><a href="#home">Home</a></li>
                         <li className='opensans'><FcAbout/><a href="#skills">Skills</a></li>
                         <li className='opensans'><MdFastfood/><a href="#Projects">Projects</a></li>

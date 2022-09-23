@@ -1,11 +1,13 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 import contact from "../assets/images/contact-img.svg"
+
 
 export const Contactus = () =>{
     return(
        <div className="contact">
             <div className="contact-anim">
-                <img src={contact} alt="contact" className="contact-img"/>
+                <motion.img src={contact} alt="contact" className="contact-img" animate={{rotate: [0,0,50,0]}} transition={{repeat:Infinity,duration:3.5}}/>
             </div>
             <div className='contact-form'>
                 <form>
