@@ -1,21 +1,21 @@
-import React from "react";
-// import {useState, useEffect} from "react";
-// import{Navbar} from "react-bootstrap";
+import React,{useState} from 'react'
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {AiOutlineClose} from 'react-icons/ai';
+import {HiHome} from 'react-icons/hi';
+import {FcAbout} from 'react-icons/fc';
+import {MdFastfood} from 'react-icons/md';
 import Navbar from "../assets/images/logo.svg"
-// import img1 from "../assets/images/nav-icon1.svg"
-// import img2 from '../assets/images/nav-icon2.svg'
-// import img3 from '../assets/images/nav-icon3.svg'; 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
-// import { TiSocialLinkedinCircular } from "react-icons/ti";
-// import { RiFacebookCircleLine } from "react-icons/ri";
-// import { BsInstagram } from "react-icons/bs";
 import "../style.css";
 // import { Socialicons } from "./Socialicons";
 
 
+
+
 export const NavBar = () =>{
+
+    const [toggleMenu, setToggleMenu] = useState(false);
+
+  const showMenu = () => setToggleMenu(!toggleMenu)
     // const [activeLink, setActiveLink] = useState('home');
     // const [scrolled, setScrolled]batter = useState(false);
 
@@ -38,45 +38,33 @@ export const NavBar = () =>{
     // }
 
     return(
-        // <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
-        //     <Container>
-        //         <Navbar.Brand href="#home">
-        //             <img src={''} alt="Logo"/>
-        //         </Navbar.Brand>
-        //         <Navbar.Toggle aria-controls="basic-navbar-nav"> 
-        //             <span className="navbar-toggle-icon"></span>
-        //         </Navbar.Toggle>
-        //         <Navbar.Collapse id="basic-navbar-nav">
-        //         <Nav className="me-auto">
-        //             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} onClick ={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-        //             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : "navbar-link"} onClick ={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-        //             <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick ={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-        //         </Nav>
-        //         <span className="navbar-text">
-        //             <div className="social-icon">
-        //                 <a href="#"><img src={'navIcon1'} alt=""/></a>
-        //                 <a href="#"><img src={'navIcon2'} alt=""/></a>
-        //                 <a href="#"><img src={'navIcon3'} alt=""/></a>
-        //             </div>
-        //             <button className="vvd" onClick={() => console.log('connect')}><span> Let's Connect</span></button>
-        //         </span>
-        //         </Navbar.Collapse>
-        //     </Container>
-        // </Navbar>
-        <div className="Navbar">
-            <div className="Logo">
-                {/* <p>Logo</p> */}
-                <img src={Navbar} alt="Logo" className="company-logo"/>
+        <div className='navbar'>
+            <div className="navbar_logo">
+                <img src={Navbar} alt="navbar_logo"/>
             </div>
-            <div className="nav">
-                <ul>
-                    <a href="#home"  id="home"><li>Home</li></a>
-                    <a href="#skills"  id="skills"><li>Skills</li></a>
-                    <a href="#projects" id="projects"><li>Projects</li></a>
-                </ul>
-                {/* <Socialicons/> */}
+            <ul className='navbar_links'>
+                <li className='opensans'><a href="#home">Home</a></li>
+                <li className='opensans'><a href="#skills">Skills</a></li>
+                <li className='opensans'><a href="#Projects">Projects</a></li>
                 <button className="connect"> Let's Connect</button>
+            </ul>
+
+
+            <div className='navbar_smallscreen'>
+                <GiHamburgerMenu cursor="pointer" color="#fff" fontSize={27}  onClick={showMenu}/>
+                {
+                toggleMenu && (
+                <div className="smallscreen-overlay">
+                    <AiOutlineClose color="#fff" cursor="pointer" fontSize={27} className="overlay-close" onClick={showMenu}/>
+                    <ul className='smallscreen-links'>
+                        <li className='opensans'><HiHome/><a href="#home">Home</a></li>
+                        <li className='opensans'><FcAbout/><a href="#skills">Skills</a></li>
+                        <li className='opensans'><MdFastfood/><a href="#Projects">Projects</a></li>
+                    </ul>
+                </div>
+                )}
+                
             </div>
-        </div>
+     </div>
     )
 }
