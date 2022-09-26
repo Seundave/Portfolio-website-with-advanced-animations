@@ -1,29 +1,20 @@
 import React from "react";
+import { useState } from "react";
 import "../style.css";
 import { Projecttab1 } from "./Projecttab1"
-import { Projecttab2 } from "./Projecttab2"
-import img1 from "../assets/images/Survey-form.JPG";
+// import { Projecttab2 } from "./Projecttab2"
+// import img1 from "../assets/images/Survey-form.JPG";
 // import img2 from "../assets/images/Tribute-page.JPG";
 
-
-// let tabs = document.querySelectorAll('.tabs-toggle'),
-// let contents = document.querySelectorAll('.tabs-content');
-
-// tabs.forEach((tab, index) => {
-//     tabs.addEventListener('click', () =>{
-//         contents.forEach((content) =>{
-//             content.classList.remove('is-active');
-//         });
-//         tabs.forEach((tab) =>{
-//            tab.classList .remove('is-active');
-//         });
-//         contents[index].classList.add('is-active');
-//         tabs[index].classList.add('is-active');
-//     });
-// });
-
-
 export const Project = () =>{
+
+
+        const [toggleState, setToggleState] = useState(1);
+    
+        const toggleTab = (index) =>{
+            setToggleState(index);
+        }
+    
     return(
         <div className="container">
             <div className="Project-title">
@@ -32,33 +23,26 @@ export const Project = () =>{
             </div>
             <div className="tabs">
                 <div className="tabs-head">
-                    <div className="tabs-toggle is-active">
+                    <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() =>toggleTab(1)}>
                     <span className="tabs-name">First Tab</span>
                     </div>
-                    <div className="tabs-toggle">
+                    <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() =>toggleTab(2)}>
                         <span className="tabs-name">Second Tab</span>
                     </div>
-                    <div className="tabs-toggle">
+                    <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() =>toggleTab(3)}>
                         <span className="tabs-name">Third Tab</span>
                     </div>
                 </div>
-                <div className="tabs-body">
-                    <div className="tabs-content is-active">
-                        <Projecttab1 
-                            // img src={img1} className="img1"
-                            // img src={img2} className="img1"
-                            // img src={img1} className="img1"
-                        /> 
-                        <Projecttab2 
-                            img src={img1} className="img1"
-                        /> 
-                        
+
+                <div className="content-body">
+                    <div className={toggleState === 1 ? "tab1 active" : "tab1"}>
+                        <Projecttab1/>     
                     </div>
-                    <div className="tabs-content">
-                        {/* <Projecttab1/>  */}
+                    <div className={toggleState === 2 ? "tab2 active" : "tab2"}>
+                        <p>Coming soon!!!</p>
                     </div>
-                    <div className="tabs-content">
-                        {/* <Projecttab1/>  */}
+                    <div className={toggleState === 3 ? "tab3 active" : "tab3"}>
+                        <Projecttab1/> 
                     </div>
                 </div>
             </div>
