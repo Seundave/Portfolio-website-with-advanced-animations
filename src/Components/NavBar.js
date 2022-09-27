@@ -46,7 +46,7 @@ export const NavBar = () =>{
                 <li className='opensans'><a href="#home">Home</a></li>
                 <li className='opensans'><a href="#skills">Skills</a></li>
                 <li className='opensans'><a href="#Projects">Projects</a></li>
-                <button className="connect"> Let's Connect</button>
+                <a href="#connect" className="connect"> Let's Connect</a>
             </ul>
 
 

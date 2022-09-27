@@ -19,7 +19,7 @@ import third from "../assets/images/meter1.svg"
 
 export const Webdevelopment =()=>{
     return(
-        <div className="skills">
+        <div className="skills" id="skills">
             <div className="skills-intro">
                 <h2>Skills</h2>
                 <p> The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, Provide a valid, navigable address as the href value. </p>

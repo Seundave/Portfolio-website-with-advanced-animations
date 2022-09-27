@@ -5,7 +5,7 @@ import contact from "../assets/images/contact-img.svg"
 
 export const Contactus = () =>{
     return(
-       <div className="contact">
+       <div className="contact" id="connect">
             <div className="contact-anim">
                 <motion.img src={contact} alt="contact" className="contact-img" animate={{rotate: [0,0,50,0]}} transition={{repeat:Infinity,duration:3.5}}/>
             </div>
