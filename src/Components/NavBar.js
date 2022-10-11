@@ -4,7 +4,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 import {HiHome} from 'react-icons/hi';
 import {FcAbout} from 'react-icons/fc';
 import {MdFastfood} from 'react-icons/md';
-import Navbar from "../assets/images/logo.svg"
+// import Navbar from "../assets/images/logo.svg"
 import "../style.css";
 // import { Socialicons } from "./Socialicons";
 
@@ -15,34 +15,26 @@ export const NavBar = () =>{
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
-  const showMenu = () => setToggleMenu(!toggleMenu)
-    // const [activeLink, setActiveLink] = useState('home');
-    // const [scrolled, setScrolled]batter = useState(false);
+    const showMenu = () => setToggleMenu(!toggleMenu)
+    const [navbar, setNabvar] = useState(false);
 
-    // useEffect(()=>{
-    //     const onScroll = () =>{
-    //         if (window.scollY > 50){
-    //             setScrolled(true);
-    //         }else{
-    //             setScrolled(false);
-    //         }
-    //     }
 
-    //     window.addEventListener("scroll", onScroll);
-
-    //     return () => window.removeEventListener("scroll", onScroll);
-    // },[]);
-
-    // const onUpdateActiveLink = (value) =>{
-    //     setActiveLink(value);
-    // }
+    const changeBackground =() =>{
+        if(window.scrollY >=80){
+          setNabvar(true)
+        }else{
+          setNabvar(false);
+        }
+      }
+    
+      window.addEventListener('scroll', changeBackground);
 
     return(
-        <div className='navbar'>
-            <div className="navbar_logo">
-                <img src={Navbar} alt="navbar_logo"/>
+        <div className={navbar ? 'navbar active' : 'navbar'}>
+            <div className={navbar ? 'navbar_logo active' : 'navbar_logo'}>
+                <h1 className="logo-text"> SEUNDAVE</h1>
             </div>
-            <ul className='navbar_links'>
+            <ul className={navbar ? 'navbar_links active' : 'navbar_links'}>
                 <li className='opensans'><a href="#home">Home</a></li>
                 <li className='opensans'><a href="#skills">Skills</a></li>
                 <li className='opensans'><a href="#Projects">Projects</a></li>

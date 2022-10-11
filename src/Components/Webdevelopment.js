@@ -26,16 +26,25 @@ export const Webdevelopment =()=>{
             </div>
             <div className="progress">
                 <div className="web-dev">
-                    <img src={first} alt=""/>
-                    <p> Web Development</p>
+                    <img src={first} alt="html"/>
+                    <p> HTML</p>
                 </div>
                 <div className="web-dev">
-                    <img src={second} alt=""/>
-                    <p> Graphic Design</p>
+                    <img src={second} alt="css"/>
+                    <p> CSS</p>
                 </div>
                 <div className="web-dev">
-                    <img src={third} alt=""/>
-                    <p> Web Development</p>
+                    <img src={second} alt="bootstrap"/>
+                    <p> BOOTSTRAP</p>
+                </div>
+                
+                <div className="web-dev">
+                    <img src={third} alt="javascript"/>
+                    <p> JAVASCRIPT</p>
+                </div>
+                <div className="web-dev">
+                    <img src={second} alt="reactjs"/>
+                    <p> REACTJS</p>
                 </div>
             </div>
                 {/* <div className="outer">

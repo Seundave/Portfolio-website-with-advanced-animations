@@ -3,7 +3,7 @@ import {NavBar} from './Components/NavBar';
 import {Banner} from './Components/Banner';
 import {Skills} from './Components/Skills';
 import {Project} from './Components/Project';
-import {Contactus} from './Components/Contactus';
+import {ContactUs} from './Components/Contactus';
 import {Subscribe} from './Components/Subscribe';
 import {Footer} from './Components/Footer';
 
@@ -17,7 +17,7 @@ function App() {
       <Banner/>
       <Skills/>
       <Project/>
-      <Contactus/>
+      <ContactUs/>
       <Subscribe/>
       <Footer/>
     </div>
