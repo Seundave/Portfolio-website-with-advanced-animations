@@ -17,25 +17,6 @@ const notify = () =>{
         progress: undefined,
     });
 
-    // toast.warning('Warning', {
-    //     position: "top-right",
-    //     autoClose: 2000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    // });
-
-    // toast.error('Message not sent', {
-    //     position: "top-right",
-    //     autoClose: 2000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    // });
 }
 export const ContactUs = () => {
     const form = useRef();
@@ -77,5 +58,5 @@ export const ContactUs = () => {
 
 export default ContactUs
 
-// {<form ref={form} onSubmit={sendEmail}></form> }
+
 

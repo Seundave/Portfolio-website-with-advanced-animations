@@ -4,11 +4,7 @@ import {AiOutlineClose} from 'react-icons/ai';
 import {HiHome} from 'react-icons/hi';
 import {FcAbout} from 'react-icons/fc';
 import {MdFastfood} from 'react-icons/md';
-// import Navbar from "../assets/images/logo.svg"
 import "../style.css";
-// import { Socialicons } from "./Socialicons";
-
-
 
 
 export const NavBar = () =>{

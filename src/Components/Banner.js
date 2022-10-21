@@ -6,8 +6,7 @@ import { useState, useEffect, useCallback, useMemo } from "react"
 import '../style.css';
 import Header from "../assets/images/header-img.svg";
 import {motion} from 'framer-motion'
-// import 'animate.css';
-// import TrackVisibility from 'react-on-screen';
+
 
 export const Banner = () =>{
     const [loopNum, setLoopNumber] = useState(0);
@@ -55,7 +54,7 @@ export const Banner = () =>{
             <div className="content" id="home">
                 <button className="Welcome"> Welcome to my Portfolio</button>
                 <h2>I am a {text}</h2>
-                <p> The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md</p>
+                <p> Hello, I am David. I specialize in Front-End Development and Graphic Designing. I build high-quality, pixel-perfect, mobile-friendly, and strong web solutions that can empower clients. I pay attention to details and always like to be accurate and thorough with every project.</p>
                 <button className="connect-us">Let's Connect</button>
             </div>
             <div className="animation">

@@ -22,7 +22,7 @@ export const Webdevelopment =()=>{
         <div className="skills" id="skills">
             <div className="skills-intro">
                 <h2>Skills</h2>
-                <p> The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, Provide a valid, navigable address as the href value. </p>
+                <p> I have had vast experience in the following tech stacks and I have completed several projects with these skills. Here are my tech stack ratings</p>
             </div>
             <div className="progress">
                 <div className="web-dev">

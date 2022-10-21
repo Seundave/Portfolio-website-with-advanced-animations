@@ -17,7 +17,7 @@ export const Projecttab1 = () =>{
             <a href="https://seundave.github.io/Pricing-component-with-toggle-master/"><img src={img3} alt="img3" className="img1"/></a>
             <a href="https://seundave.github.io/Tribute-page/"><img src={img4} alt="img4" className="img1"/></a>
             <a href="https://seundave.github.io/Social-media-dashboard-with-theme-switcher/"><img src={img5} alt="img5" className="img1"/></a>
-            <a href="https://seundave.github.io/Pricing-component-with-toggle-master/"><img src={img6} alt="img5" className="img1"/>
+            <a href="https://seundaveportfolio.netlify.app/"><img src={img6} alt="img5" className="img1"/>
             </a>
         </div>
         

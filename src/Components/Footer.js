@@ -1,5 +1,7 @@
-// import { Socialicons } from "./Socialicons"
-import Navbar from "../assets/images/logo.svg"
+import "../style.css";
+import {BsGithub} from 'react-icons/bs';
+import {BsLinkedin} from 'react-icons/bs';
+
 
 
 
@@ -7,8 +9,14 @@ import Navbar from "../assets/images/logo.svg"
 export const Footer =()=>{
     return(
         <div className="Footer">
-            <img src={Navbar} alt="Logo" className="footer-img"/>
-            {/* <Socialicons className="footer-icons"/> */}
+            <div className="footer-logo">
+                <h1 className="logo-text"> SEUNDAVE</h1>
+            </div>
+            <div className="contact-logo">
+                <a href="https://github.com/Seundave"><BsGithub/></a>
+                <a href="https://www.linkedin.com/in/david-olaleye//"><BsLinkedin/></a>
+            </div>
+              
         </div>
 
         
