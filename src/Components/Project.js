@@ -24,7 +24,7 @@ export const Project = () =>{
             <div className="tabs">
                 <div className="tabs-head">
                     <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() =>toggleTab(1)}>
-                    <span className="tabs-name">All</span>
+                    <span className="tabs-name">All projects</span>
                     </div>
                     <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() =>toggleTab(2)}>
                         <span className="tabs-name">Reactjs</span>

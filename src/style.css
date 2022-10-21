@@ -424,11 +424,12 @@ svg{
 }
 
 .tabs-name{
-    font-size: 20px;
+    font-size: 15px;
     color:white;
     font-weight: 500;
     text-align: center;
     cursor: pointer;
+    text-align: center;
 }
 
 .active-tabs{
@@ -436,6 +437,7 @@ svg{
     transition: 1s ease;
     border-radius: 20px;
     width:400px;
+    height:25px;
     cursor: pointer;
 }
 
@@ -861,6 +863,10 @@ textarea {
 
     .tabs-body {
         width: 100%;
+    }
+
+    .active-tabs{
+        height:15px;
     }
 
     .Projecttab {

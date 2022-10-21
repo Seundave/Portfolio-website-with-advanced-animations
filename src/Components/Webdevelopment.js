@@ -1,28 +1,15 @@
 import React from "react";
-// import { Graphicdesign } from "./Graphicdesign";
 import '../style.css';
 import first from "../assets/images/meter1.svg"
 import second from "../assets/images/meter1.svg"
 import third from "../assets/images/meter1.svg"
-
-// let number = document.getElementById("number");
-// let counter = 0;
-// setInterval(() =>{
-//     if (counter === 95){
-//         clearInterval();
-//     }else{
-//         counter +=1; 
-//         number.innerHTML = counter +"%";
-//     }
-   
-// },1000);
 
 export const Webdevelopment =()=>{
     return(
         <div className="skills" id="skills">
             <div className="skills-intro">
                 <h2>Skills</h2>
-                <p> I have had vast experience in the following tech stacks and I have completed several projects with these skills. Here are my tech stack ratings</p>
+                <p> I have vast experience in the following tech stacks and I have completed several projects with these skills. Here are my tech stack ratings</p>
             </div>
             <div className="progress">
                 <div className="web-dev">
