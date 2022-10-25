@@ -15,6 +15,7 @@ body{
     height:100%;
     background-color: black;
     background-image: url('/public/banner-bg.png');
+    background-repeat: no-repeat;
     
 }
 
@@ -40,7 +41,7 @@ body{
     width:150px;
     color:white;
     padding-left: 10px;
-    font-family:'Montserrat' ;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar_logo.active > h1{
@@ -79,6 +80,7 @@ body{
     cursor:pointer;
     text-decoration: none;
     color:white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar_links > li >a:hover{
@@ -173,7 +175,7 @@ body{
     background-color: transparent;
     border: 2px solid white;
     color:white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 15px;
     text-align: center;
@@ -229,7 +231,7 @@ section{
 
 .Welcome{
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     width:200px;
     height:50px;
     margin-left: 50px;
@@ -237,15 +239,17 @@ section{
     padding:10px;
     text-align: center;
     color:white;
+    letter-spacing: 0.3px;
     background: linear-gradient(hsl(308, 73%, 35%), hsl(244, 64%, 50%));;
     border:none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content > h2{
     margin-left: 50px;
     margin-top:15px;
     font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content > p{
@@ -265,8 +269,8 @@ section{
     color:white;
     background-color: transparent;
     border:none;
-    /* margin-top: 100px; */
     font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .connect-us:hover{
@@ -279,6 +283,7 @@ section{
 /* Start of skills */
 .skills{
     width:80%;
+    height: 100%;
     margin:0px auto;
     border-radius:30px;
     background-color: rgb(15, 14, 14);
@@ -289,98 +294,54 @@ section{
 .skills-intro > h2{
     text-align: center;
     font-size: 40px;
-    padding:25px 0px;
+    padding:20px 0px;
     color:white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .skills-intro > p{
     text-align: center;
     font-size: 15px;
-    padding:10px 80px;
+    padding:5px 80px;
     color:rgb(134, 130, 130);
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .progress{
     width:100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    /* background-color: aqua; */
+    margin:15px 0px;
+}
+
+.css,.html,.bootstrap,.javascript,.react,.github{
+    font-size:60px;
+    color:white;
 }
 
 .web-dev{
+    width:15%;
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin:0px auto;
-    /* margin-right: 55px; */
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right: calc(10%/6);
 }
 
 
 .web-dev > p{
     color:white;
     text-align: center;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.outer{
-    height:160px;
-    width:160px;
-    border-radius:50%;
-    /* box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-                -6px -6px 10px -1px rgba(225,225,225,0.7); */
-    /* border:1px solid white; */
-    padding:20px;
-}
-
-.inner{
-    height:120px;
-    width:120px;
-    border-radius:50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border:1px solid white; */
-    /* box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-                inset -4px -4px 6px -1px rgba(225,225,225,0.7),
-                -0.5px -0.5px 0px rgba(225,225,225,1),
-                0.5px 0.5px 0px rgba(0,0,0,0.15),
-                0px 12px 10px -10px rgba(0,0,0,0.05); */
-}
-
-#number{
-    font-weight:700;
-    color:white;
-    justify-content: center;
-}
-
-circle{
-    fill:none;
-    stroke:url(#GradientColor);
-    stroke-width:20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
-}
-
-svg{
-    position: absolute;
-}
-
-.web{
-    color:white;
-    text-align: center;
-    padding: 15px;
-}
-
-.Graphic{
-    color:white;
-    text-align: center;
-    padding: 15px;
-}
 /* End of skills */
 
 /* Start of project */
@@ -394,12 +355,14 @@ svg{
     text-align: center;
     color:white;
     padding:20px 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Project-title > p{
     text-align: center;
     padding:20px 300px;
     color:rgb(134, 130, 130);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tabs{
@@ -430,6 +393,7 @@ svg{
     text-align: center;
     cursor: pointer;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .active-tabs{
@@ -504,6 +468,7 @@ form > h2{
     font-size: 35px;
     margin-bottom: 10px;
     color:white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact-anim{
@@ -530,11 +495,12 @@ input[type="text"],input[type="email"],input[type="tel"]{
         color: white;
         background-color: transparent;
         border: 1px solid #ffffff;
+        font-family: 'Montserrat', sans-serif;
 }
 
 ::-webkit-input-placeholder{
     color:white;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
@@ -560,6 +526,7 @@ textarea {
     font-weight: 700;
     font-size: 15px;
     margin-bottom: 150px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* End of contact */
@@ -579,7 +546,7 @@ textarea {
 
 .subscribe-text{
     width:40%;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size:30px;
     text-align: center;
     padding:50px 15px;
@@ -598,6 +565,7 @@ textarea {
     border: 1px solid black;
     margin-top: 70px;
     border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
     
     
 }
@@ -618,6 +586,7 @@ textarea {
     position:absolute;
     top:75px;
     right:70px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* End of subscribe */
@@ -713,6 +682,11 @@ textarea {
     .web-dev{
         margin: 0px;
     }
+
+    .web-dev > p{
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
     
     .Project-title > p{
         text-align: center;
@@ -787,7 +761,7 @@ textarea {
 
     .navbar_logo>h1{
         font-size: 20px;
-        margin-top:25px;
+        /* margin-top:25px; */
         padding:0px;
     }
 
@@ -845,8 +819,24 @@ textarea {
     }
 
     .progress{
+        width:100%;
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .web-dev{
+        width:28%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: calc(16%/3);
+    }
+
+    .web-dev > p{
+        font-size: 10px;
+    }
+
+    .css,.html,.bootstrap,.javascript,.react,.github{
+        font-size:30px;
     }
 
     .tabs-head {
@@ -919,26 +909,23 @@ textarea {
 @media screen and (max-width:280px) {
 
     .navbar{
-        /* margin:0px; */
         padding-left:20px;
     }
 
     .navbar_logo>h1{
         font-size: 15px;
-        /* margin-top:25px; */
     }
 
    
 
     .progress{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    /* .overlay-close{
-        top:0px;
-        right:45px;
-    } */
+    .css,.html,.bootstrap,.javascript,.react,.github{
+        font-size:25px;
+    }
 
     .Project-title>p{
         font-size: 15px;

@@ -1,9 +1,6 @@
 import React,{useState} from 'react'
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {AiOutlineClose} from 'react-icons/ai';
-import {HiHome} from 'react-icons/hi';
-import {FcAbout} from 'react-icons/fc';
-import {MdFastfood} from 'react-icons/md';
 import "../style.css";
 
 
@@ -45,9 +42,9 @@ export const NavBar = () =>{
                 <div className="smallscreen-overlay">
                     <AiOutlineClose color="#fff" cursor="pointer" fontSize={27} className="overlay-close" onClick={showMenu}/>
                     <ul className='smallscreen-links'onClick={showMenu}>
-                        <li className='opensans'><HiHome/><a href="#home">Home</a></li>
-                        <li className='opensans'><FcAbout/><a href="#skills">Skills</a></li>
-                        <li className='opensans'><MdFastfood/><a href="#Projects">Projects</a></li>
+                        <li className='opensans'><a href="#home">Home</a></li>
+                        <li className='opensans'><a href="#skills">Skills</a></li>
+                        <li className='opensans'><a href="#Projects">Projects</a></li>
                     </ul>
                 </div>
                 )}
