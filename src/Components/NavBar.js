@@ -13,7 +13,7 @@ export const NavBar = () =>{
 
 
     const changeBackground =() =>{
-        if(window.scrollY >=80){
+        if(window.scrollY >=1){
           setNabvar(true)
         }else{
           setNabvar(false);
